@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import BlogCard from "../components/BlogCard";
 import FurnitureProduct from "../components/FurnitureProduct";
+import GardenProduct from "../components/GardenProduct";
 import Marque from "../components/Marque";
 import SpecialProduct from "../components/SpecialProduct";
 const Home = () => {
@@ -139,9 +140,10 @@ const Home = () => {
       </div>
     </div>
   </div>
-</section>
-
-
+      </section>
+      <section>
+        <GardenProduct/>
+      </section>
       <section>
         <FurnitureProduct />
       </section>

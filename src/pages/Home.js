@@ -110,28 +110,28 @@ const Home = () => {
   <div className="container-xxl">
     <div className="row">
       <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
-        <span>1.</span>
+        <span className="span1">1.</span>
         <div>
           <h6>Home Delivery.</h6>
           <p>The European languages.</p>
         </div>
       </div>
       <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
-        <span>2.</span>
+        <span  className="span1">2.</span>
         <div>
           <h6>Order As a Gift.</h6>
           <p>Donec odio etiam sceles.</p>
         </div>
       </div>
       <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
-        <span>3.</span>
+        <span  className="span1">3.</span>
         <div>
           <h6>High Quality.</h6>
           <p>Curabitur hac hac maece.</p>
         </div>
       </div>
       <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
-        <span>4.</span>
+        <span  className="span1">4.</span>
         <div>
           <h6>Buy With Joy.</h6>
           <p>Ullamcorper magna nec.</p>

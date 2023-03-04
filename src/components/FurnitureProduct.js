@@ -5,8 +5,8 @@ const FurnitureProduct = () => {
     dots: false,
     infinite: false,
     speed: 700,
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     initialSlide: 0,
     responsive: [
       {
@@ -37,6 +37,7 @@ const FurnitureProduct = () => {
   };
   return (
     <>
+    <div className="container">
       <h3 className="heading">
         FURNITURE PRODUCT
         <hr />
@@ -102,6 +103,7 @@ const FurnitureProduct = () => {
             );
           })}
         </Slider>
+      </div>
       </div>
     </>
   );

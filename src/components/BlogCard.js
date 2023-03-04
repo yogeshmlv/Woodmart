@@ -2,19 +2,48 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 const BlogCard = () => {
-  const settings = {
+  var settings = {
     dots: false,
     infinite: false,
-    speed: 500,
+    speed: 700,
     slidesToShow: 3,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>
+     <div className="container">
       <h3 className="heading">
         OUR BLOG
-        <hr />
+        <hr/>
       </h3>
+     
       <Slider {...settings}>
         <div className="col-3">
           <div className="blog-card">
@@ -120,6 +149,7 @@ const BlogCard = () => {
           </div>
         </div>
       </Slider>
+      </div>
     </>
   );
 };

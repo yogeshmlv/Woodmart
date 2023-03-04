@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import BlogCard from "../components/BlogCard";
 import FurnitureProduct from "../components/FurnitureProduct";
 import GardenProduct from "../components/GardenProduct";
@@ -9,6 +9,7 @@ const Home = () => {
   return (
     <>
       <section>
+        <div className="container"></div>
         {" "}
         <div
           id="carouselExampleCaptions"
@@ -107,43 +108,86 @@ const Home = () => {
       <section>
         <SpecialProduct />
       </section>
+      <div className="container">
       <section className="py-4 name pe-200">
-  <div className="container-xxl">
-    <div className="row">
-      <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
-        <span className="span1">1.</span>
-        <div>
-          <h6>Home Delivery.</h6>
-          <p>The European languages.</p>
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
+              <span className="span1">1.</span>
+              <div>
+                <h6>Home Delivery.</h6>
+                <p>The European languages.</p>
+              </div>
+            </div>
+            <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
+              <span className="span1">2.</span>
+              <div>
+                <h6>Order As a Gift.</h6>
+                <p>Donec odio etiam sceles.</p>
+              </div>
+            </div>
+            <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
+              <span className="span1">3.</span>
+              <div>
+                <h6>High Quality.</h6>
+                <p>Curabitur hac hac maece.</p>
+              </div>
+            </div>
+            <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
+              <span className="span1">4.</span>
+              <div>
+                <h6>Buy With Joy.</h6>
+                <p>Ullamcorper magna nec.</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
       </div>
-      <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
-        <span  className="span1">2.</span>
-        <div>
-          <h6>Order As a Gift.</h6>
-          <p>Donec odio etiam sceles.</p>
-        </div>
-      </div>
-      <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
-        <span  className="span1">3.</span>
-        <div>
-          <h6>High Quality.</h6>
-          <p>Curabitur hac hac maece.</p>
-        </div>
-      </div>
-      <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
-        <span  className="span1">4.</span>
-        <div>
-          <h6>Buy With Joy.</h6>
-          <p>Ullamcorper magna nec.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+      <section>
+        <GardenProduct />
       </section>
       <section>
-        <GardenProduct/>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="image-with-text position-relative">
+                <img
+                  src="images/wood-portfolio-placeholder-568x200.jpg"
+                  class="img-fluid"
+                />
+                <div class="text-container position-absolute">
+                  <span>COATED ALUMINUM FRAME</span>
+                  <p>Discount 30% Garden Equipment.</p>
+                  <div class="slider-btn1 ">
+                    <a>READ MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="image-with-text position-relative">
+                <img
+                  src="images/wood-portfolio-placeholder-568x200.jpg"
+                  class="img-fluid"
+                />
+                <div class="text-container position-absolute ">
+                  <span>COATED ALUMINUM FRAME</span>
+                  <p>
+                    New Arrival of
+                    <br />
+                    Modern Garden Gloves.
+                  </p>
+                  <div class="slider-btn1 ">
+                    <a>READ MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
       <section>
         <FurnitureProduct />
       </section>

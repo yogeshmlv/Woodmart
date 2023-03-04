@@ -5,155 +5,203 @@ import { BsSearch } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-      <footer className="py-4">
-        <div className="container-xxl">
-        <div className="row">
-            <div className="col-3 d-flex align-items-center gap-30 text-white">
-            <img src="images/cart.svg" alt="cart" />
-            <div>
-                <h6>Free Shipping</h6>
-                <p>All order Delivery Free </p>
+      <footer>
+        <div className="">
+        <div class="py-4 footer1">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+              <div class="col d-flex align-items-center text-white">
+                <img src="images/cart.svg" alt="cart" class="me-3" />
+                <div>
+                  <h6 class="mb-0">Free Shipping</h6>
+                  <p class="mb-0  header-text">All orders ship for free</p>
+                </div>
               </div>
-            </div>
-            <div className="col-3 d-flex align-items-center gap-30 text-white">
-            <img src="images/cart.svg" alt="cart" />
-              <div>
-                <h6>24/7 Support</h6>
-                <p>It has survived not only</p>
+              <div class="col d-flex align-items-center text-white">
+                <img src="images/cart.svg" alt="cart" class="me-3" />
+                <div>
+                  <h6 class="mb-0">24/7 Support</h6>
+                  <p class="mb-0 f header-text">We're here to help</p>
                 </div>
-            </div>
-            <div className="col-3 d-flex align-items-center gap-30 text-white">
-            <img src="images/cart.svg" alt="cart" />
-            <div>
-                <h6>Online Payments</h6>
-                <p>All Payment are Secured</p>
+              </div>
+              <div class="col d-flex align-items-center text-white">
+                <img src="images/cart.svg" alt="cart" class="me-3" />
+                <div>
+                  <h6 class="mb-0">Online Payments</h6>
+                  <p class="mb-0 header-text">All payments are secure</p>
                 </div>
-            </div>
-            <div className="col-3 d-flex align-items-center gap-30 text-white">
-            <img src="images/cart.svg" alt="cart" />
-            <div>
-                <h6>Affortable Prices</h6>
-                <p>Get Factory Default Price</p>
+              </div>
+              <div class="col d-flex align-items-center text-white">
+                <img src="images/cart.svg" alt="cart" class="me-3" />
+                <div>
+                  <h6 class="mb-0">Affordable Prices</h6>
+                  <p class="mb-0 header-text">Get factory prices</p>
                 </div>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
-      <footer className="py-4">
-        <div className="container-xxl">
-          <div className="row">
-          <div className="col-2">
-              <h4 className="text-white mb-4">OUR STORES</h4>
-              <div className="footer-link d-flex flex-column">
-                <Link to="/privacy-policy" className="text-white py-2 mb-1">
-                New York
-                </Link>
-                <Link to="/refund-policy" className="text-white py-2 mb-1">
-                London SF
-                </Link>
-                <Link to="/shipping-policy" className="text-white py-2 mb-1">
-                Cockfosters BP
-                </Link>
-                <Link to="/term-conditions" className="text-white py-2 mb-1">
-                Los Angeles
-                </Link>
-                <Link className="text-white py-2 mb-1">Chicago</Link>
+
+        <div class="py-4 footer1">
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-lg-2 col-md-4">
+                <h6 class="text-white mb-4">OUR STORES</h6>
+                <div class="footer-link d-flex flex-column">
+                  <a href="/privacy-policy" class="text-white py-2">
+                    New York
+                  </a>
+                  <a href="/refund-policy" class="text-white py-2">
+                    London SF
+                  </a>
+                  <a href="/shipping-policy" class="text-white py-2">
+                    Cockfosters BP
+                  </a>
+                  <a href="/term-conditions" class="text-white py-2">
+                    Los Angeles
+                  </a>
+                  <a href="#" class="text-white py-2">
+                    Chicago
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="col-2">
-              <h4 className="text-white mb-4">USEFUL LINKS</h4>
-              <div className="footer-link d-flex flex-column">
-                <Link to="/privacy-policy" className="text-white py-2 mb-1">
-                  Privacy Policy
-                </Link>
-                <Link to="/refund-policy" className="text-white py-2 mb-1">
-                  Refund Policy
-                </Link>
-                <Link to="/shipping-policy" className="text-white py-2 mb-1">
-                  Shipping Policy
-                </Link>
-                <Link to="/term-conditions" className="text-white py-2 mb-1">
-                  Terms & Conditions
-                </Link>
-                <Link className="text-white py-2 mb-1">Blogs</Link>
+              <div class="col-lg-2 col-md-4">
+                <h6 class="text-white mb-4">USEFUL LINKS</h6>
+                <div class="footer-link d-flex flex-column">
+                  <a href="/privacy-policy" class="text-white py-2">
+                    Privacy Policy
+                  </a>
+                  <a href="/refund-policy" class="text-white py-2">
+                    Refund Policy
+                  </a>
+                  <a href="/shipping-policy" class="text-white py-2">
+                    Shipping Policy
+                  </a>
+                  <a href="/term-conditions" class="text-white py-2">
+                    Terms &amp; Conditions
+                  </a>
+                  <a href="#" class="text-white py-2">
+                    Blogs
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="col-2">
-              <h4 className="text-white mb-4">Account</h4>
-              <div className="footer-link d-flex flex-column">
-                <Link className="text-white py-2 mb-1">About Us</Link>
-                <Link className="text-white py-2 mb-1">Faq</Link>
-                <Link className="text-white py-2 mb-1">Contact</Link>
+              <div class="col-lg-2 col-md-4">
+                <h6 class="text-white mb-4">Account</h6>
+                <div class="footer-link d-flex flex-column">
+                  <a href="#" class="text-white py-2">
+                    About Us
+                  </a>
+                  <a href="#" class="text-white py-2">
+                    FAQ
+                  </a>
+                  <a href="#" class="text-white py-2">
+                    Contact
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="col-2">
-              <h4 className="text-white mb-4">Quick Links</h4>
-              <div className="footer-link d-flex flex-column">
-                <Link className="text-white py-2 mb-1">Laptops</Link>
-                <Link className="text-white py-2 mb-1">Headphones</Link>
-                <Link className="text-white py-2 mb-1">Tablets</Link>
-                <Link className="text-white py-2 mb-1">Watch</Link>
+              <div className="col-lg-2 col-md-4 ">
+                <h6 class="text-white mb-4 ">Quick Links</h6>
+                <div class="footer-link d-flex flex-column">
+                  <a href="#" class="text-white py-2 ">
+                    Laptops
+                  </a>
+                  <a href="#" class="text-white py-2 ">
+                    Headphones
+                  </a>
+                  <a href="#" class="text-white py-2 ">
+                    Tablets
+                  </a>
+                  <a href="#" class="text-white py-2 ">
+                    Watch
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="col-2">
-              <h4 className="text-white mb-4">AVAILABLE ON:</h4>
-              <img src="images/google-play-button.png.webp" alt="cart" />
-              <div className="text-white mt-4">Join our newsletter!</div>
-              <div className="">
-        <div className="input-group">
-          <input
-            type="text"
-            className="form-control py-2"
-            placeholder="Your Email.."
-            aria-label="Your Email.."
-            aria-describedby="basic-addon2"
-          />
-          <span className="input-group-text p-3" id="basic-addon2">
-            <BsSearch className="fs-9" />
-          </span>
-        </div>
-      </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <footer className="py-4 ">
-        <div className="container-xxl">
-          <div className="row">
-          <div className="col-3">
-              <h6 className="text-white mb-4">Payment System:</h6>
-              <img src="images/wood-portfolio-placeholder-303x24.jpg"/>
-            </div>
-            <div className="col-3">
-              <h6 className="text-white mb-4">Shipping System:</h6>
-              <img src="images/wood-portfolio-placeholder-303x24.jpg"/>
+              <div className="col-lg-4 col-md-8">
+                <div className="row gx-3">
+                  <div className="col-md-9">
+                    <h6 className="text-white mb-4">AVAILABLE ON:</h6>
+                    <img
+                      src="images/google-play-button.png.webp"
+                      alt="google play"
+                    />
+                    {/* <img src="images/wood-gallery-placeholder-4-200x65.jpg" alt="cart" /> */}
+                  </div>
+                </div>
+                <br />
+                <div className="col-lg-4-md-8">
+                  <h6 className="text-white mb-4">Join our newsletter!</h6>
+                  
+                  <div className="input-group">
+                    <input
+                      type="text"
+                      className="form-control py-2"
+                      placeholder="Your Email.."
+                      aria-label="Your Email.."
+                      aria-describedby="basic-addon2"
+                    />
+                    <span className="input-group-text p-3" id="basic-addon2">
+                      <BsSearch className="fs-9" />
+                    </span>
+                  </div>
+                </div>
+              </div>
               
             </div>
-            <div className="col-3">
-              <h6 className="text-white mb-4">Our Social Links:</h6>
-              <div className="col-1">
-              <p className="text-end text-white mb-0 d-flex align-items-center gap-15">
-                <i class="bi bi-facebook"></i>
-                <i className="bi bi-linkedin"></i>
-                <i className="bi bi-twitter"></i>
-                <i className="bi bi-telegram"></i>
-                <i className="bi bi-pinterest"></i>
-              </p>
-            </div>
-              
+          </div>
+        </div>
+        <div class="py-4 footer1">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <h6 class="text-white mb-4">Payment System:</h6>
+                <img
+                  src="images/wood-portfolio-placeholder-303x24.jpg"
+                  class="img-fluid"
+                  alt="Payment System"
+                />
+              </div>
+              <div class="col-12 col-md-4">
+                <h6 class="text-white mb-4">Shipping System:</h6>
+                <img
+                  src="images/wood-portfolio-placeholder-303x24.jpg"
+                  class="img-fluid"
+                  alt="Shipping System"
+                />
+              </div>
+              <div class="col-12 col-md-4">
+                <h6 class="text-white mb-4">Our Social Links:</h6>
+                <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3 gap-md-0">
+                  <a href="#" class="text-white p-3">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#" class="text-white p-3">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="#" class="text-white p-3">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="#" class="text-white p-3">
+                    <i class="bi bi-telegram"></i>
+                  </a>
+                  <a href="#" class="text-white p-3">
+                    <i class="bi bi-pinterest"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
-      <footer className="py-4">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <p className="text-center mb-0 text-white">
-                &copy; {new Date().getFullYear()} Powered by Aidigitek Pvt.Ltd
-              </p>
+        <div className="py-4 footer1">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p className="text-center mb-0 text-white">
+                  &copy; {new Date().getFullYear()} Powered by Aidigitek Pvt.Ltd
+                </p>
+              </div>
             </div>
           </div>
+        </div>
         </div>
       </footer>
     </>

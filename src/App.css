@@ -70,6 +70,7 @@ a {
 }
 .col-4 {
   color: var(--color-f4a51c);
+  padding-right: 1px;
 }
 .header-bottom .dropdown-item {
   padding: 15px;
@@ -83,14 +84,26 @@ a {
 /* Header Part End Here  */
 
 /*    Footer part         */
-footer {
+.footer1 {
   background-color: var(--color-header);
 }
-footer:not(:first-child) {
+.footer1:not(:first-child) {
   border-top: 1px solid var(--color-232f3e);
 }
-footer .input-group-text {
+.footer1 .input-group-text {
   background-color: var(--color-f4a51c);
+}
+.footer-link a {
+  display: block;
+  padding: 9px 0;
+  font-size: 13px;
+  line-height: 18px;
+  word-break: break-word;
+ color: rgba(255,255,255,.8) !important; 
+}
+.header-text{
+  color: rgba(255,255,255,.8);
+  font-size: 13px;
 }
 
 /*    Footer part End Here      */
@@ -195,13 +208,6 @@ background-color: white;
   display: flex;
   justify-content: center;
 }
-
-.slider-btn button {
-  margin: 0 10px;
-  padding: 10px 20px;
-  font-size: 14px;
-}
-
 .carousel-inner1{
   filter: blur(8px);
   -webkit-filter: blur(8px);
@@ -273,3 +279,58 @@ color: #131921;
   color: #f4a51c;
   font-size: 3.5rem;
 }
+/* FOR TRAVELERS Component Css */ 
+.text-container{
+  top: 10%;
+  left: 5%;
+}
+.slider-btn1{
+  display: flex;
+  justify-content: flex-start;
+}
+.text-container span{
+  text-transform: none;
+  color: #f4a51c;
+  cursor: pointer;
+}
+.text-container p{
+  color: #fff;
+  cursor: pointer;
+}
+.slider-btn1 a{
+  cursor: pointer;
+  color: white !important;
+  text-decoration-line: underline;  
+}
+/* FOR TRAVELERS Component Css End */  
+
+/*Product Page css*/
+.product-card{
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.product-card .product-details h6{
+color: var(--color-f4a51c);
+font-size: 13px;
+}
+.product-card .product-details h5{
+  font-size: 15px;
+  color: #131921;
+}
+.product-card .product-details p.price{
+  font-size: 16px;
+}
+/*Product Page Css End*/
+/* Cart Item */
+.item-number{
+  background-color:#f4a51c;
+  border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-weight: 400!important;
+    font-size: 10px!important;
+    line-height: 15px;
+}
+/* Cart Item */

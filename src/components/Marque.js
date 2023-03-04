@@ -3,6 +3,7 @@ import Marquee from "react-fast-marquee";
 const Marque = () => {
     return (
         <>
+        <div className='container'>
             <hr />
             <section className='marque-wrapper py-5'>
                 <div className="container-xxl">
@@ -37,7 +38,9 @@ const Marque = () => {
                     </div>
                 </div>
             </section>
+            </div>
         </>
+        
     )
 }
 

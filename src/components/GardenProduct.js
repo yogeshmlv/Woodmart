@@ -5,8 +5,8 @@ const GardenProduct = () => {
     dots: false,
     infinite: false,
     speed: 700,
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     initialSlide: 0,
     responsive: [
       {
@@ -37,10 +37,12 @@ const GardenProduct = () => {
   };
   return (
     <>
+    <div className="container">
       <h3 className="heading">
         FOR TRAVELERS
         <hr />
       </h3>
+    
       <div style={{ marginTop: 30 }}>
         <Slider {...settings}>
           {[
@@ -102,6 +104,7 @@ const GardenProduct = () => {
             );
           })}
         </Slider>
+      </div>
       </div>
     </>
   );

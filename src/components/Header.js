@@ -4,27 +4,30 @@ import { BsSearch } from "react-icons/bs";
 const Header = () => {
   return (
     <>
-      <header className="header-top-strip d-none d-md-block">
-        <div class="d-flex bd-highlight mb-1 text-white">
-          <div class="me-auto p-2 bd-highlight">
-            FREE SHIPPING FOR ALL ORDERS OF $150
+    <header>
+      <div className="header-top-strip d-none d-md-block">
+        <div className="container">
+          <div class="d-flex bd-highlight mb-1 text-white">
+            <div class="me-auto p-2 bd-highlight">
+              FREE SHIPPING FOR ALL ORDERS OF $150
+            </div>
+            <div class="p-2 bd-highlight">
+              <p className="text-end text-white mb-0 d-flex align-items-center gap-15">
+                <i class="bi bi-facebook"></i>
+                <i className="bi bi-linkedin"></i>
+                <i className="bi bi-twitter"></i>
+                <i className="bi bi-telegram"></i>
+                <i className="bi bi-pinterest"></i>
+              </p>
+            </div>
+            <div class="p-2 bd-highlight">NEWSLETTER</div>
+            <div class="p-2 bd-highlight">CONTACT US</div>
+            <div class="p-2 bd-highlight">FAQS</div>
           </div>
-          <div class="p-2 bd-highlight">
-            <p className="text-end text-white mb-0 d-flex align-items-center gap-15">
-              <i class="bi bi-facebook"></i>
-              <i className="bi bi-linkedin"></i>
-              <i className="bi bi-twitter"></i>
-              <i className="bi bi-telegram"></i>
-              <i className="bi bi-pinterest"></i>
-            </p>
-          </div>
-          <div class="p-2 bd-highlight">NEWSLETTER</div>
-          <div class="p-2 bd-highlight">CONTACT US</div>
-          <div class="p-2 bd-highlight">FAQS</div>
         </div>
-      </header>
-      <header class="navbar navbar-expand-lg navbar-dark header-top-strip  ">
-        <div class="container-fluid py-2 gap-30 ">
+      </div>
+      <div class="navbar navbar-expand-lg navbar-dark header-top-strip">
+        <div class="container py-2 gap-10">
           <button
             class="navbar-toggler"
             type="button"
@@ -42,59 +45,30 @@ const Header = () => {
             </Link>
           </h2>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <div className="col-7">
-              <div className="input-group ">
-                <input
-                  type="text"
-                  className="form-control py-2"
-                  placeholder="Search Product Here..."
-                  aria-label="Search Product Here..."
-                  aria-describedby="basic-addon2"
-                />
-                <span className="input-group-text  p-3" id="basic-addon2">
-                  <BsSearch className="fs-6" />
-                </span>
+            <div className="input-group w-75">
+              <input
+                type="text"
+                className="form-control py-2"
+                placeholder="Search Product Here..."
+                aria-label="Search Product Here..."
+                aria-describedby="basic-addon2"
+              />
+              <span className="input-group-text  p-3" id="basic-addon2">
+                <BsSearch className="fs-9"/>
+              </span>
+            </div>
+            <div className=" text-white mb-0 d-flex align-items-start gap-15">
+                <span className="px-4">Login/Register</span>
+                <i class="bi bi-heart d-flex  align-items-center"><span  className="mb-2 item-number">0</span></i>
+                <i class="bi bi-arrow-left-right  d-flex  align-items-center"><span  className="mb-2 item-number">0</span></i>
+                <i class="bi bi-handbag-fill  d-flex align-items-center"><span class="mb-2 item-number">0</span></i>
               </div>
-            </div>
-            <div className=" d-flex align-items-center justify-content-between">
-              <Link className="d-flex align-items-center gap-10 text-white">
-                <img className="img" src="images/compare.svg" alt="compare" />
-                <p className="mb-0">
-                  Compare <br /> Products
-                </p>
-              </Link>
-            </div>
-            <div>
-              <Link className="d-flex align-items-center gap-10 text-white">
-                <img className="img" src="images/wishlist.svg" alt="wishlist" />
-                <p className="mb-0">
-                  Favourite <br /> wishlist
-                </p>
-              </Link>
-            </div>
-            <div>
-              <Link className="d-flex align-items-center gap-10 text-white">
-                <img className="img" src="images/user.svg" alt="user" />
-                <p className="mb-0">
-                  Login <br />
-                  My Account
-                </p>
-              </Link>
-            </div>
-            <div>
-              <Link className="d-flex align-items-center gap-10 text-white">
-                <img className="img" src="images/cart.svg" alt="cart" />
-                <div className="d-flex flex-column gap-10">
-                  <span className="badge bg-white text-dark">0</span>
-                  <p className="mb-0">$ 500</p>
-                </div>
-              </Link>
-            </div>
           </div>
+
         </div>
-      </header>
-      <header className="header-bottom py-3 d-none d-md-block">
-        <div className="container-xxl">
+      </div>
+      <div className="header-bottom py-3 d-none d-md-block">
+        <div className="container">
           <div className="row">
             <div className="col-12">
               <div className="menu-bottom d-flex align-items-center gap-30">
@@ -292,13 +266,14 @@ const Header = () => {
                       </ul>
                     </div>
                     <div className="col-7">BUY</div>
-                    <div className="col-4">SPECIAL OFFER</div>
+                    {/* <div className="col-4">SPECIAL OFFER</div> */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
       </header>
     </>
   );

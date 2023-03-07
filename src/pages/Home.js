@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Sales from "../components/Sales";
 import BlogCard from "../components/BlogCard";
 import FurnitureProduct from "../components/FurnitureProduct";
 import GardenProduct from "../components/GardenProduct";
 import Marque from "../components/Marque";
 import SpecialProduct from "../components/SpecialProduct";
+import Sales2 from "../components/Sales2";
+import MostPopular from "../components/MostPopular";
 const Home = () => {
   return (
     <>
@@ -105,56 +107,78 @@ const Home = () => {
           </button>
         </div>
       </section>
-      <section>
+      <section className="container">
         <SpecialProduct />
-      </section>
-      <div className="container">
-      <section className="py-4 name pe-200">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
-              <span className="span1">1.</span>
-              <div>
-                <h6>Home Delivery.</h6>
-                <p>The European languages.</p>
+        <div className="">
+          <div class="row">
+            <div class="col-md-6"><Sales /></div>
+            <div class="col-md-6"><Sales2 /></div>
+          </div>
+          {/* <div class="row">
+            <div class="col-md-6">
+            <img
+              src="images/wood-portfolio-placeholder-1200x900 (1).jpg"
+              alt="Mountain"
+              className="most"
+            />
+            </div>
+            <div class="col-md-6"> <MostPopular/></div>
+          </div> */}
+        </div>
+        <div className="">
+          <section className="py-4 name pe-200">
+            <div className="container">
+              <div className="row">
+                <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
+                  <span className="span1">1.</span>
+                  <div>
+                    <h6>Home Delivery.</h6>
+                    <p>The European languages.</p>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
+                  <span className="span1">2.</span>
+                  <div>
+                    <h6>Order As a Gift.</h6>
+                    <p>Donec odio etiam sceles.</p>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
+                  <span className="span1">3.</span>
+                  <div>
+                    <h6>High Quality.</h6>
+                    <p>Curabitur hac hac maece.</p>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
+                  <span className="span1">4.</span>
+                  <div>
+                    <h6>Buy With Joy.</h6>
+                    <p>Ullamcorper magna nec.</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
-              <span className="span1">2.</span>
-              <div>
-                <h6>Order As a Gift.</h6>
-                <p>Donec odio etiam sceles.</p>
-              </div>
-            </div>
-            <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
-              <span className="span1">3.</span>
-              <div>
-                <h6>High Quality.</h6>
-                <p>Curabitur hac hac maece.</p>
-              </div>
-            </div>
-            <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
-              <span className="span1">4.</span>
-              <div>
-                <h6>Buy With Joy.</h6>
-                <p>Ullamcorper magna nec.</p>
-              </div>
-            </div>
+          </section>
+        </div>
+        <div className="">
+          <div class="row">
+          <div class="col-md-6"><Sales2 /></div>
+            <div class="col-md-6"><Sales /></div>
           </div>
         </div>
       </section>
-      </div>
       <section>
         <GardenProduct />
       </section>
       <section>
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-between">
             <div class="col-sm-6">
               <div class="image-with-text position-relative">
                 <img
                   src="images/wood-portfolio-placeholder-568x200.jpg"
-                  class="img-fluid"
+                  class="img-fluid fluid"
                 />
                 <div class="text-container position-absolute">
                   <span>COATED ALUMINUM FRAME</span>
@@ -169,7 +193,7 @@ const Home = () => {
               <div class="image-with-text position-relative">
                 <img
                   src="images/wood-portfolio-placeholder-568x200.jpg"
-                  class="img-fluid"
+                  class="img-fluid fluid"
                 />
                 <div class="text-container position-absolute ">
                   <span>COATED ALUMINUM FRAME</span>
@@ -187,7 +211,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section>
         <FurnitureProduct />
       </section>

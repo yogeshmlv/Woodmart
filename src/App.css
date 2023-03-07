@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   box-sizing: border-box;
 }
 :root {
@@ -155,7 +155,7 @@ top: 0;
 left: 0;
 bottom: 0;
 right: 0;
-background: #000;
+background: #f5f3f3;
 opacity: 0.7;
 }
 .carousel-caption{
@@ -219,12 +219,11 @@ background-color: white;
 }
 .image2{
 height: 200px;
-margin-left: 30px;
+
 margin-right: 30px;
 cursor: pointer;
 }
 .heading{
-  margin-left: 30px;
   text-decoration: underline ;
   text-decoration-color: var(--color-f4a51c);
   margin-top: 20px;
@@ -283,6 +282,7 @@ color: #131921;
 .text-container{
   top: 10%;
   left: 5%;
+  padding-left: 10px;
 }
 .slider-btn1{
   display: flex;
@@ -292,10 +292,12 @@ color: #131921;
   text-transform: none;
   color: #f4a51c;
   cursor: pointer;
+  
 }
 .text-container p{
   color: #fff;
   cursor: pointer;
+  
 }
 .slider-btn1 a{
   cursor: pointer;
@@ -334,3 +336,20 @@ font-size: 13px;
     line-height: 15px;
 }
 /* Cart Item */
+.special{
+ border:2px solid #f4a51c;
+ padding: 20px;
+}
+.image3{
+  cursor: pointer;
+  width: 150px;
+  height: 180px;
+}
+.most{
+  cursor: pointer;
+  width: 750px;
+  height: 550px;
+}
+.image5{
+  height: 520px;
+}

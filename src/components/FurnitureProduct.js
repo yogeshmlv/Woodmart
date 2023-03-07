@@ -37,73 +37,73 @@ const FurnitureProduct = () => {
   };
   return (
     <>
-    <div className="container">
-      <h3 className="heading">
-        FURNITURE PRODUCT
-        <hr />
-      </h3>
-      <div style={{ marginTop: 30 }}>
-        <Slider {...settings}>
-          {[
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image2"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image2"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image2"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image2"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image2"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image2"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image2"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image2"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image2"
-            />,
-          ].map((item, index) => {
-            return (
-              <div key={index}>
-                <div style={{ fontSize: 20, textAlign: "center" }}>
-                  {item}
-                  CLOCKS
-                  <br />
-                  <p style={{ fontSize: 15 }}>1 Product</p>
+      <div className="container">
+        <h3 className="heading">
+          FURNITURE PRODUCT
+          <hr />
+        </h3>
+        <div style={{ marginTop: 30 }}>
+          <Slider {...settings}>
+            {[
+              <img
+                src="images/wood-portfolio-placeholder.jpg"
+                alt="Mountain"
+                className="image2"
+              />,
+              <img
+                src="images/wood-portfolio-placeholder.jpg"
+                alt="Mountain"
+                className="image2"
+              />,
+              <img
+                src="images/wood-portfolio-placeholder.jpg"
+                alt="Mountain"
+                className="image2"
+              />,
+              <img
+                src="images/wood-portfolio-placeholder.jpg"
+                alt="Mountain"
+                className="image2"
+              />,
+              <img
+                src="images/wood-portfolio-placeholder.jpg"
+                alt="Mountain"
+                className="image2"
+              />,
+              <img
+                src="images/wood-portfolio-placeholder.jpg"
+                alt="Mountain"
+                className="image2"
+              />,
+              <img
+                src="images/wood-portfolio-placeholder.jpg"
+                alt="Mountain"
+                className="image2"
+              />,
+              <img
+                src="images/wood-portfolio-placeholder.jpg"
+                alt="Mountain"
+                className="image2"
+              />,
+              <img
+                src="images/wood-portfolio-placeholder.jpg"
+                alt="Mountain"
+                className="image2"
+              />,
+            ].map((item, index) => {
+              return (
+                <div key={index}>
+                  <div style={{ fontSize: 20, textAlign: "center" }}>
+                    {item}
+                    CLOCKS
+                    <br />
+                    <p style={{ fontSize: 15 }}>1 Product</p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </Slider>
-      </div>
+              );
+            })}
+          </Slider>
+        </div>
       </div>
     </>
   );

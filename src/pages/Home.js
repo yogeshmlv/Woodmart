@@ -6,7 +6,7 @@ import GardenProduct from "../components/GardenProduct";
 import Marque from "../components/Marque";
 import SpecialProduct from "../components/SpecialProduct";
 import Sales2 from "../components/Sales2";
-import MostPopular from "../components/MostPopular";
+// import MostPopular from "../components/MostPopular";
 const Home = () => {
   return (
     <>

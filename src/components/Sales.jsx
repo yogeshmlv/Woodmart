@@ -3,7 +3,7 @@ import React from 'react'
 const Sales = () => {
     return (
         <>
-            <div className="container">
+            <div className="">
                 <section>
                     <div className='special'>
                         <h4 className="">

@@ -127,7 +127,7 @@ const Home = () => {
         </div>
         <div className="">
           <section className="py-4 name pe-200">
-            <div className="container">
+            <div className="">
               <div className="row">
                 <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
                   <span className="span1">1.</span>
@@ -171,8 +171,8 @@ const Home = () => {
       <section>
         <GardenProduct />
       </section>
-      <section>
-        <div class="container">
+      <section  class="container">
+        <div>
           <div class="row justify-content-between">
             <div class="col-sm-6">
               <div class="image-with-text position-relative">

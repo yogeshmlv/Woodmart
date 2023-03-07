@@ -40,10 +40,8 @@ const BlogCard = () => {
     <>
       <div className="container">
         <h3 className="heading">
-          OUR BLOG
+          OUR BLOG </h3>
           <hr />
-        </h3>
-
         <Slider {...settings}>
           <div className="col-3">
             <div className="blog-card">

@@ -37,11 +37,10 @@ const FurnitureProduct = () => {
   };
   return (
     <>
-      <div className="container">
+       <div className="container">
         <h3 className="heading">
-          FURNITURE PRODUCT
+          FURNITURE PRODUCT</h3>
           <hr />
-        </h3>
         <div style={{ marginTop: 30 }}>
           <Slider {...settings}>
             {[

@@ -37,10 +37,9 @@ var settings = {
 const Sales2 = () => {
   return (
     <div className="">
-      <h4 className="heading">
-        SPECIAL OFFER
-        <hr />
-      </h4>
+    <h3 className="heading">
+      SALE PRODUCTS</h3>
+      <hr />
 
       <div style={{ marginTop: 30 }}>
         <Slider {...settings}>

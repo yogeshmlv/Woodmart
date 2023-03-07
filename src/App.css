@@ -223,11 +223,22 @@ height: 200px;
 margin-right: 30px;
 cursor: pointer;
 }
-.heading{
-  text-decoration: underline ;
-  text-decoration-color: var(--color-f4a51c);
-  margin-top: 20px;
+.heading {
+  display: inline-block;
+  position: relative;
+  padding-top: 20px;
 }
+.heading:after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding-bottom: 57px;
+  color: #f4a51c;
+  border-width: 0 0 3px;
+  border-style: solid;
+}
+
 
 
 /* Blog Css*/
@@ -353,6 +364,9 @@ font-size: 13px;
 .image5{
   height: 520px;
 }
-.golu{
+.control{
   background-color: #f4a51c;
+}
+.heading hr {
+ 
 }

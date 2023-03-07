@@ -39,9 +39,8 @@ const SpecialProduct = () => {
     <>
       <div className="container">
         <h3 className="heading">
-          TOP CATEGORIES
+          TOP CATEGERIES</h3>
           <hr />
-        </h3>
         <div style={{ marginTop: 30 }}>
           <Slider {...settings}>
             {[

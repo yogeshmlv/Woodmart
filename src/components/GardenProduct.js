@@ -39,9 +39,8 @@ const GardenProduct = () => {
     <>
       <div className="container">
         <h3 className="heading">
-          FOR GARDEN PRODUCT
+          GARDEN PRODUCT</h3>
           <hr />
-        </h3>
 
         <div style={{ marginTop: 30 }}>
           <Slider {...settings}>

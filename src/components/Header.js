@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 const Header = () => {
   return (
@@ -40,7 +40,7 @@ const Header = () => {
               <span class="navbar-toggler-icon"></span>
             </button>
             <h2>
-              <Link className="mb-0 text-white">
+              <Link to="/" className="mb-0 text-white">
                 <img src="images/wood-logo-white (1).svg" />
               </Link>
             </h2>
@@ -58,16 +58,21 @@ const Header = () => {
                 </span>
               </div>
               <div className=" text-white mb-0 d-flex align-items-start gap-15">
-                <span className="px-4">Login/Register</span>
-                <i class="bi bi-heart d-flex  align-items-center">
+                <Link to="/login"><span className="px-4 custom">Login/Register</span>
+                </Link>
+                <Link to="/wishlist"><i class="bi bi-heart d-flex  align-items-center custom">
                   <span className="mb-2 item-number">0</span>
                 </i>
-                <i class="bi bi-arrow-left-right  d-flex  align-items-center">
+                </Link>
+                <Link to="compare-product"><i class="bi bi-arrow-left-right  d-flex  align-items-center custom">
                   <span className="mb-2 item-number">0</span>
                 </i>
-                <i class="bi bi-handbag-fill  d-flex align-items-center">
+                </Link>
+                <Link to="/cart">
+                <i class="bi bi-handbag-fill  d-flex align-items-center custom">
                   <span class="mb-2 item-number">0</span>
                 </i>
+                </Link>
               </div>
             </div>
           </div>
@@ -130,9 +135,9 @@ const Header = () => {
                           aria-labelledby="dropdownMenuButton1"
                         >
                           <li>
-                            <a class="dropdown-item" href="#">
+                            <NavLink to="/store" class="dropdown-item" href="#">
                               Action
-                            </a>
+                            </NavLink>
                           </li>
                           <li>
                             <a class="dropdown-item" href="#">

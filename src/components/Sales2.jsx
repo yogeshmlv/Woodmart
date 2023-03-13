@@ -1,4 +1,5 @@
-import React from 'react'
+
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 var settings = {
   dots: false,
@@ -35,12 +36,12 @@ var settings = {
   ],
 };
 const Sales2 = () => {
+
   return (
     <div className="">
-    <h3 className="heading">
-      SALE PRODUCTS</h3>
+      <h3 className="heading">
+        SALE PRODUCTS</h3>
       <hr />
-
       <div style={{ marginTop: 30 }}>
         <Slider {...settings}>
           {[
@@ -77,6 +78,21 @@ const Sales2 = () => {
                   CLOCKS
                   <br />
                   <p style={{ fontSize: 15, color: "orange" }}>$239.00</p>
+                </div>
+                <div className="d-flex flex-column ">
+                  <Link to="/cart">
+                    <img src="images/add-cart.svg" alt="addcart" />
+                  </Link>
+                </div>
+                <div className="d-flex flex-column ">
+                  <Link to="/compare-product">
+                    <img src="images/prodcompare.svg" alt="addcart" />
+                  </Link>
+                </div>
+                <div className="d-flex flex-column ">
+                  <Link to="/singleproduct">
+                    <img src="images/view.svg" alt="addcart" />
+                  </Link>
                 </div>
               </div>
             );
@@ -116,11 +132,28 @@ const Sales2 = () => {
                   <br />
                   <p style={{ fontSize: 15, color: "orange" }}>$239.00</p>
                 </div>
+                <div className="d-flex flex-column ">
+                  <Link to="/cart">
+                    <img src="images/add-cart.svg" alt="addcart" />
+                  </Link>
+                </div>
+                <div className="d-flex flex-column ">
+                  <Link to="/cart">
+                    <img src="images/prodcompare.svg" alt="addcart" />
+                  </Link>
+                </div>
+                <div className="d-flex flex-column ">
+                  <Link to="/cart">
+                    <img src="images/view.svg" alt="addcart" />
+                  </Link>
+                </div>
               </div>
+
             );
           })}
         </Slider>
       </div>
+
     </div>
   );
 };

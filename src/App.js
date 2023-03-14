@@ -16,6 +16,7 @@ import Resetpassword from "./pages/Resetpassword";
 import Forgotpassword from "./pages/Forgetpassword";
 import CompareProduct from "./pages/CompareProduct";
 import SingleProduct from "./pages/SingleProduct";
+import UserProfile from "./pages/UserProfile";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route path="reset-password" element={<Resetpassword />} />
             <Route path="compare-product" element={<CompareProduct />} />
             <Route path="singleproduct" element={<SingleProduct />} />
+            <Route path="user-profile" element={<UserProfile/>} />
           </Route>
         </Routes>
       </BrowserRouter>

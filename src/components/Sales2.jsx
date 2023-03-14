@@ -79,20 +79,22 @@ const Sales2 = () => {
                   <br />
                   <p style={{ fontSize: 15, color: "orange" }}>$239.00</p>
                 </div>
-                <div className="d-flex flex-column ">
-                  <Link to="/cart">
-                    <img src="images/add-cart.svg" alt="addcart" />
-                  </Link>
-                </div>
-                <div className="d-flex flex-column ">
-                  <Link to="/compare-product">
-                    <img src="images/prodcompare.svg" alt="addcart" />
-                  </Link>
-                </div>
-                <div className="d-flex flex-column ">
-                  <Link to="/singleproduct">
-                    <img src="images/view.svg" alt="addcart" />
-                  </Link>
+                <div className="d-flex flex-row gap-30">
+                  <div className="d-flex flex-column">
+                    <Link to="/cart">
+                      <img src="images/add-cart.svg" alt="addcart" />
+                    </Link>
+                  </div>
+                  <div className="d-flex flex-column">
+                    <Link to="/compare-product">
+                      <img src="images/prodcompare.svg" alt="addcart" />
+                    </Link>
+                  </div>
+                  <div className="d-flex flex-column">
+                    <Link to="/singleproduct">
+                      <img src="images/view.svg" alt="addcart" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             );
@@ -132,21 +134,24 @@ const Sales2 = () => {
                   <br />
                   <p style={{ fontSize: 15, color: "orange" }}>$239.00</p>
                 </div>
-                <div className="d-flex flex-column ">
-                  <Link to="/cart">
-                    <img src="images/add-cart.svg" alt="addcart" />
-                  </Link>
+                <div className="d-flex flex-row gap-30">
+                  <div className="d-flex flex-column">
+                    <Link to="/cart">
+                      <img src="images/add-cart.svg" alt="addcart" />
+                    </Link>
+                  </div>
+                  <div className="d-flex flex-column">
+                    <Link to="/cart">
+                      <img src="images/prodcompare.svg" alt="addcart" />
+                    </Link>
+                  </div>
+                  <div className="d-flex flex-column">
+                    <Link to="/cart">
+                      <img src="images/view.svg" alt="addcart" />
+                    </Link>
+                  </div>
                 </div>
-                <div className="d-flex flex-column ">
-                  <Link to="/cart">
-                    <img src="images/prodcompare.svg" alt="addcart" />
-                  </Link>
-                </div>
-                <div className="d-flex flex-column ">
-                  <Link to="/cart">
-                    <img src="images/view.svg" alt="addcart" />
-                  </Link>
-                </div>
+
               </div>
 
             );

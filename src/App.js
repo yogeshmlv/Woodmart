@@ -1,4 +1,4 @@
-import React from "react";
+import React,{createContext} from "react";
 import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -17,10 +17,16 @@ import Forgotpassword from "./pages/Forgetpassword";
 import CompareProduct from "./pages/CompareProduct";
 import SingleProduct from "./pages/SingleProduct";
 import UserProfile from "./pages/UserProfile";
+import data from "./components/data/data";
+
+export  const ProductContext=createContext(data)
 
 function App() {
+      const {productItems} =data;
+
   return (
     <>
+     <ProductContext.Provider value={productItems} >
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -40,6 +46,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      </ProductContext.Provider>
     </>
   );
 }

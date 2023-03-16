@@ -1,6 +1,7 @@
-
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
+import { ProductContext } from "../App";
 var settings = {
   dots: false,
   infinite: false,
@@ -36,58 +37,94 @@ var settings = {
   ],
 };
 const Sales2 = () => {
+  const productsItems = useContext(ProductContext)
+  const [productsItemss, setProductsItemss] = useState([]);
+
+  const addToCart = (item) => {
+    const existingItem = productsItemss.find((productsItems) => productsItems.id === item.id);
+    if (existingItem) {
+      setProductsItemss(
+        productsItemss.map((productsItems) =>
+          productsItems.id === item.id ? { ...productsItems, quantity: productsItems.quantity + 1 } : productsItems
+        )
+      );
+    } else {
+      setProductsItemss([...productsItemss, { ...item, quantity: 1 }]);
+    }
+    localStorage.setItem("productsItemss", JSON.stringify(productsItemss));
+  };
+  const removeFromCart = (itemId) => {
+    setProductsItemss(productsItemss.filter((productsItems) => productsItems.id !== itemId));
+    localStorage.setItem("productsItemss", JSON.stringify(productsItemss));
+  };
+  useEffect(() => {
+    const productsItemss = JSON.parse(localStorage.getItem("productsItemss")) || [];
+    setProductsItemss(productsItemss);
+  }, []);
+
 
   return (
     <div className="">
-      <h3 className="heading">
-        SALE PRODUCTS</h3>
+      <h3 className="heading">SALE PRODUCTS</h3>
       <hr />
       <div style={{ marginTop: 30 }}>
         <Slider {...settings}>
-          {[
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image3"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image3"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image3"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image3"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image3"
-            />,
-          ].map((item, index) => {
+          {productsItems.map((productsItems) => {
             return (
-              <div key={index}>
+              <div key={productsItems}>
                 <div style={{ fontSize: 20, textAlign: "center" }}>
-                  {item}
-                  CLOCKS
+                  <img src={productsItems.image} alt={productsItems.name} className="image3" />
+                  {productsItems.name}
                   <br />
-                  <p style={{ fontSize: 15, color: "orange" }}>$239.00</p>
+                  <p style={{ fontSize: 15, color: "orange" }}>
+                    ${productsItems.price}
+                  </p>
                 </div>
                 <div className="d-flex flex-row gap-30">
                   <div className="d-flex flex-column">
-                    <Link to="/cart">
+                    <Link to="/cart" onClick={() => addToCart(productsItems)}>
                       <img src="images/add-cart.svg" alt="addcart" />
                     </Link>
                   </div>
                   <div className="d-flex flex-column">
-                    <Link to="/compare-product">
-                      <img src="images/prodcompare.svg" alt="addcart" />
+                    <Link to="/cart" onClick={() => removeFromCart(productsItems.id)}>
+                      <img src="images/prodcompare.svg" alt="removecart" />
+                    </Link>
+
+                  </div>
+                  <div className="d-flex flex-column">
+                    <Link to="/singleproduct">
+                      <img src="images/view.svg" alt="addcart" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </Slider>
+      </div>
+      <div style={{ marginTop: 30 }}>
+        <Slider {...settings}>
+          {productsItems.map((productsItems) => {
+            return (
+              <div key={productsItems}>
+                <div style={{ fontSize: 20, textAlign: "center" }}>
+                  <img src={productsItems.image} alt={productsItems.name} className="image3" />
+                  {productsItems.name}
+                  <br />
+                  <p style={{ fontSize: 15, color: "orange" }}>
+                    ${productsItems.price}
+                  </p>
+                </div>
+                <div className="d-flex flex-row gap-30">
+                  <div className="d-flex flex-column">
+                  <Link to="/cart" onClick={() => addToCart(productsItems)}>
+                      <img src="images/add-cart.svg" alt="addcart" />
+                    </Link>
+                  </div>
+                  <div className="d-flex flex-column">
+                  <Link to="/cart" onClick={() => removeFromCart(productsItems.id)}>
+                      <img src="images/prodcompare.svg" alt="removecart" />
                     </Link>
                   </div>
                   <div className="d-flex flex-column">
@@ -101,67 +138,7 @@ const Sales2 = () => {
           })}
         </Slider>
       </div>
-
-      <div style={{ marginTop: 30 }}>
-        <Slider {...settings}>
-          {[
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image3"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image3"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image3"
-            />,
-            <img
-              src="images/wood-portfolio-placeholder.jpg"
-              alt="Mountain"
-              className="image3"
-            />,
-          ].map((item, index) => {
-            return (
-              <div key={index}>
-                <div style={{ fontSize: 20, textAlign: "center" }}>
-                  {item}
-                  CLOCKS
-                  <br />
-                  <p style={{ fontSize: 15, color: "orange" }}>$239.00</p>
-                </div>
-                <div className="d-flex flex-row gap-30">
-                  <div className="d-flex flex-column">
-                    <Link to="/cart">
-                      <img src="images/add-cart.svg" alt="addcart" />
-                    </Link>
-                  </div>
-                  <div className="d-flex flex-column">
-                    <Link to="/cart">
-                      <img src="images/prodcompare.svg" alt="addcart" />
-                    </Link>
-                  </div>
-                  <div className="d-flex flex-column">
-                    <Link to="/cart">
-                      <img src="images/view.svg" alt="addcart" />
-                    </Link>
-                  </div>
-                </div>
-
-              </div>
-
-            );
-          })}
-        </Slider>
-      </div>
-
     </div>
   );
 };
-
-
 export default Sales2;

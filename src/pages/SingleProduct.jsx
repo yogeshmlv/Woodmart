@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import ReactStars from "react-rating-stars-component";
-import BreadCrumb from "../components/BreadCrumb";
-import Meta from "../components/Meta";
+import BreadCrumb from "../Core/BreadCrumb";
+import Meta from "../Core/Meta";
 import ProductCard from "../components/ProductCard";
 import ReactImageZoom from "react-image-zoom";
-import Color from "../components/Color";
+import Color from "../Core/Color";
 import { TbGitCompare } from "react-icons/tb";
 import { AiOutlineHeart } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import Container from "../components/Container";
+import Container from "../Core/Container";
 const SingleProduct = () => {
   const props = {
     width: 594,
@@ -81,7 +81,7 @@ const SingleProduct = () => {
               </div>
               <div className="border-bottom py-3">
                 <p className="price">$ 100</p>
-                <div className="d-flex align-items-center gap-10">
+                <div className="d-flex align-items-center gap-1">
                   <ReactStars
                     count={5}
                     size={24}
@@ -91,32 +91,32 @@ const SingleProduct = () => {
                   />
                   <p className="mb-0 t-review">( 2 Reviews )</p>
                 </div>
-                <a className="review-btn" href="#review">
+                <a className="review-btn text-decoration-none d-inline-block" href="#review">
                   Write a Review
                 </a>
               </div>
               <div className=" py-3">
-                <div className="d-flex gap-10 align-items-center my-2">
+                <div className="d-flex gap-1 align-items-center my-2">
                   <h3 className="product-heading">Type :</h3>
                   <p className="product-data">Watch</p>
                 </div>
-                <div className="d-flex gap-10 align-items-center my-2">
+                <div className="d-flex gap-1 align-items-center my-2">
                   <h3 className="product-heading">Brand :</h3>
                   <p className="product-data">Havells</p>
                 </div>
-                <div className="d-flex gap-10 align-items-center my-2">
+                <div className="d-flex gap-1 align-items-center my-2">
                   <h3 className="product-heading">Category :</h3>
                   <p className="product-data">Watch</p>
                 </div>
-                <div className="d-flex gap-10 align-items-center my-2">
+                <div className="d-flex gap-1 align-items-center my-2">
                   <h3 className="product-heading">Tags :</h3>
                   <p className="product-data">Watch</p>
                 </div>
-                <div className="d-flex gap-10 align-items-center my-2">
+                <div className="d-flex gap-1 align-items-center my-2">
                   <h3 className="product-heading">Availablity :</h3>
                   <p className="product-data">In Stock</p>
                 </div>
-                <div className="d-flex gap-10 flex-column mt-2 mb-3">
+                <div className="d-flex gap-1 flex-column mt-2 mb-3">
                   <h3 className="product-heading">Size :</h3>
                   <div className="d-flex flex-wrap gap-15">
                     <span className="badge border border-1 bg-white text-dark border-secondary">
@@ -133,7 +133,7 @@ const SingleProduct = () => {
                     </span>
                   </div>
                 </div>
-                <div className="d-flex gap-10 flex-column mt-2 mb-3">
+                <div className="d-flex gap-1 flex-column mt-2 mb-3">
                   <h3 className="product-heading">Color :</h3>
                   <Color />
                 </div>
@@ -164,17 +164,17 @@ const SingleProduct = () => {
                 </div>
                 <div className="d-flex align-items-center gap-15">
                   <div>
-                    <a href="">
+                    <a className="text-decoration-none d-inline-block" href="">
                       <TbGitCompare className="fs-5 me-2" /> Add to Compare
                     </a>
                   </div>
                   <div>
-                    <a href="">
+                    <a className="text-decoration-none d-inline-block" href="">
                       <AiOutlineHeart className="fs-5 me-2" /> Add to Wishlist
                     </a>
                   </div>
                 </div>
-                <div className="d-flex gap-10 flex-column  my-3">
+                <div className="d-flex gap-1 flex-column  my-3">
                   <h3 className="product-heading">Shipping & Returns :</h3>
                   <p className="product-data">
                     Free shipping and returns available on all orders! <br /> We
@@ -182,9 +182,9 @@ const SingleProduct = () => {
                     <b>5-10 business days!</b>
                   </p>
                 </div>
-                <div className="d-flex gap-10 align-items-center my-3">
+                <div className="d-flex gap-1 align-items-center my-3">
                   <h3 className="product-heading">Product Link:</h3>
-                  <a
+                  <a className="text-decoration-none d-inline-block"
                     href="javascript:void(0);"
                     onClick={() => {
                       copyToClipboard(
@@ -223,7 +223,7 @@ const SingleProduct = () => {
               <div className="review-head d-flex justify-content-between align-items-end">
                 <div>
                   <h4 className="mb-2">Customer Reviews</h4>
-                  <div className="d-flex align-items-center gap-10">
+                  <div className="d-flex align-items-center gap-1">
                     <ReactStars
                       count={5}
                       size={24}
@@ -271,7 +271,7 @@ const SingleProduct = () => {
               </div>
               <div className="reviews mt-4">
                 <div className="review">
-                  <div className="d-flex gap-10 align-items-center">
+                  <div className="d-flex gap-1 align-items-center">
                     <h6 className="mb-0">Yogesh Singh</h6>
                     <ReactStars
                       count={5}

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import BreadCrumb from "../components/BreadCrumb";
-import Meta from "../components/Meta";
+import BreadCrumb from "../Core/BreadCrumb";
+import Meta from "../Core/Meta";
 import ReactStars from "react-rating-stars-component";
 import ProductCard from "../components/ProductCard";
-import Color from "../components/Color";
-import Container from "../components/Container";
+import Color from "../Core/Color";
+import Container from "../Core/Container";
 
 const OurStore = () => {
   const [grid, setGrid] = useState(4);
@@ -55,7 +55,7 @@ const OurStore = () => {
                   </div>
                 </div>
                 <h5 className="sub-title">Price</h5>
-                <div className="d-flex align-items-center gap-10">
+                <div className="d-flex align-items-center gap-1">
                   <div className="form-floating">
                     <input
                       type="email"
@@ -109,7 +109,7 @@ const OurStore = () => {
             <div className="filter-card mb-3">
               <h3 className="filter-title">Product Tags</h3>
               <div>
-                <div className="product-tags d-flex flex-wrap align-items-center gap-10">
+                <div className="product-tags d-flex flex-wrap align-items-center gap-1">
                   <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
                     Headphone
                   </span>
@@ -178,7 +178,7 @@ const OurStore = () => {
           <div className="col-9">
             <div className="filter-sort-grid mb-4">
               <div className="d-flex justify-content-between align-items-center">
-                <div className="d-flex align-items-center gap-10">
+                <div className="d-flex align-items-center gap-1">
                   <p className="mb-0 d-block" style={{ width: "100px" }}>
                     Sort By:
                   </p>
@@ -200,9 +200,9 @@ const OurStore = () => {
                     <option value="created-descending">Date, new to old</option>
                   </select>
                 </div>
-                <div className="d-flex align-items-center gap-10">
+                <div className="d-flex align-items-center gap-1">
                   <p className="totalproducts mb-0">21 Products</p>
-                  <div className="d-flex gap-10 align-items-center grid">
+                  <div className="d-flex gap-1 align-items-center grid">
                     <img
                       onClick={() => {
                         setGrid(3);
@@ -241,7 +241,7 @@ const OurStore = () => {
               </div>
             </div>
             <div className="products-list pb-5">
-              <div className="d-flex gap-10 flex-wrap">
+              <div className="d-flex gap-1 flex-wrap">
                 <ProductCard grid={grid} />
               </div>
             </div>

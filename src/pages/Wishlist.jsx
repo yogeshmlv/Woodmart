@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import BreadCrumb from "../components/BreadCrumb";
-import Meta from "../components/Meta";
-import Container from "../components/Container";
+import BreadCrumb from "../Core/BreadCrumb";
+import Meta from "../Core/Meta";
+import Container from "../Core/Container";
 
 const Wishlist = () => {
   const [products, setProducts] = useState([

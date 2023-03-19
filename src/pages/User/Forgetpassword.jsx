@@ -1,9 +1,9 @@
 import React from "react";
-import BreadCrumb from "../components/BreadCrumb";
-import Meta from "../components/Meta";
+import BreadCrumb from "../../Core/BreadCrumb";
+import Meta from "../../Core/Meta";
 import { Link } from "react-router-dom";
-import Container from "../components/Container";
-import CustomInput from "../components/CustomInput";
+import Container from "../../Core/Container";
+import CustomInput from "../../Core/CustomInput";
 const Forgotpassword = () => {
   return (
     <>
@@ -17,11 +17,11 @@ const Forgotpassword = () => {
               <p className="text-center mt-2 mb-3">
                 We will send you an email to reset your password
               </p>
-              <form action="" className="d-flex flex-column gap-15">
+              <form action="" className="d-flex flex-column gap-2">
                 <CustomInput type="email" name="email" placeholder="Email" />
 
                 <div>
-                  <div className="mt-3 d-flex justify-content-center flex-column gap-15 align-items-center">
+                  <div className="mt-3 d-flex justify-content-center flex-column gap-2 align-items-center">
                     <button className="button1 border-0" type="submit">
                       Submit
                     </button>

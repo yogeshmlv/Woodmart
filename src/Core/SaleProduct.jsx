@@ -36,7 +36,7 @@ var settings = {
     },
   ],
 };
-const Sales2 = () => {
+const SaleProduct = () => {
   const productsItems = useContext(ProductContext)
   const [productsItemss, setProductsItemss] = useState([]);
 
@@ -80,7 +80,7 @@ const Sales2 = () => {
                     ${productsItems.price}
                   </p>
                 </div>
-                <div className="d-flex flex-row gap-30">
+                <div className="d-flex flex-row gap-3">
                   <div className="d-flex flex-column">
                     <Link to="/cart" onClick={() => addToCart(productsItems)}>
                       <img src="images/add-cart.svg" alt="addcart" />
@@ -116,7 +116,7 @@ const Sales2 = () => {
                     ${productsItems.price}
                   </p>
                 </div>
-                <div className="d-flex flex-row gap-30">
+                <div className="d-flex flex-row gap-3">
                   <div className="d-flex flex-column">
                   <Link to="/cart" onClick={() => addToCart(productsItems)}>
                       <img src="images/add-cart.svg" alt="addcart" />
@@ -141,4 +141,4 @@ const Sales2 = () => {
     </div>
   );
 };
-export default Sales2;
+export default SaleProduct;

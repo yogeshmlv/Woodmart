@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import BreadCrumb from "../components/BreadCrumb";
-import Color from "../components/Color";
-import Meta from "../components/Meta";
-import Container from "../components/Container";
+import BreadCrumb from "../Core/BreadCrumb";
+import Color from "../Core/Color";
+import Meta from "../Core/Meta";
+import Container from "../Core/Container";
 
 const CompareProduct = () => {
   const [products, setProducts] = useState([
@@ -76,7 +76,7 @@ const CompareProduct = () => {
                     </div>
                     <div className="product-detail">
                       <h5>Size:</h5>
-                      <div className="d-flex gap-10">
+                      <div className="d-flex gap-1">
                         {product.sizes.map((size) => (
                           <p key={size}>{size}</p>
                         ))}

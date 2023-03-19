@@ -10,14 +10,14 @@ import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import OurStore from "./pages/OurStore";
 import Wishlist from "./pages/Wishlist";
-import Login from "./pages/Login";
-import SignUp from "./pages/SignUp";
-import Resetpassword from "./pages/Resetpassword";
-import Forgotpassword from "./pages/Forgetpassword";
+import Login from "./pages/User/Login";
+import SignUp from "./pages/User/SignUp";
+import Resetpassword from "./pages/User/Resetpassword";
+import Forgotpassword from "./pages/User/Forgetpassword";
 import CompareProduct from "./pages/CompareProduct";
 import SingleProduct from "./pages/SingleProduct";
-import UserProfile from "./pages/UserProfile";
-import data from "./components/data/data";
+import UserProfile from "./pages/User/UserProfile";
+import data from "./components/Api/data";
 
 export  const ProductContext=createContext(data)
 

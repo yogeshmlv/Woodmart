@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { AiFillDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import Container from "../components/Container";
+import Container from "../Core/Container";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([
@@ -38,7 +38,7 @@ const Cart = () => {
             </div>
             {cartItems.map((item) => (
               <div key={item.id} className="cart-data py-3 mb-2 d-flex justify-content-between align-items-center">
-                <div className="cart-col-1 gap-15 d-flex align-items-center">
+                <div className="cart-col-1 gap-1 d-flex align-items-center">
                   <div className="w-25">
                     <img src="images/watch.jpg" className="img-fluid" alt="product image" />
                   </div>
@@ -51,7 +51,7 @@ const Cart = () => {
                 <div className="cart-col-2">
                   <h5 className="price">$ {item.price}</h5>
                 </div>
-                <div className="cart-col-3 d-flex align-items-center gap-15">
+                <div className="cart-col-3 d-flex align-items-center gap-1">
                   <div>
                     <input
                       className="form-control"

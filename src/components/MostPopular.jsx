@@ -1,5 +1,7 @@
 import React from 'react'
 import Slider from "react-slick";
+
+
 var settings = {
   dots: false,
   infinite: false,

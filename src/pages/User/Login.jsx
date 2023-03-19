@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BreadCrumb from "../components/BreadCrumb";
-import Meta from "../components/Meta";
-import Container from "../components/Container";
-import CustomInput from "../components/CustomInput";
+import BreadCrumb from "../../Core/BreadCrumb";
+import Meta from "../../Core/Meta";
+import Container from "../../Core/Container";
+import CustomInput from "../../Core/CustomInput";
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom'
 const Login = () => {
@@ -74,7 +74,7 @@ console.log(getuserArr);
           <div className="col-12">
             <div className="auth-card">
               <h3 className="text-center mb-3">Login</h3>
-              <form action="" className="d-flex flex-column gap-15">
+              <form action="" className="d-flex flex-column gap-2">
                 <CustomInput type="email" handleChange={getdata} name="email" placeholder="Email"/>
                 <CustomInput
                   type="password"
@@ -85,7 +85,7 @@ console.log(getuserArr);
                 <div>
                   <Link to="/forgot-password">Forgot Password?</Link>
 
-                  <div className="mt-3 d-flex justify-content-center gap-15 align-items-center">
+                  <div className="mt-3 d-flex justify-content-center gap-2 align-items-center">
                     <button className="button1 border-0" type="submit" onClick={addData}>
                       Login
                     </button>

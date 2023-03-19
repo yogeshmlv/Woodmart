@@ -23,18 +23,7 @@ a {
   box-shadow: none;
   border-color: inherit;
 }
-.gap-10 {
-  gap: 10px;
-}
-.gap-15 {
-  gap: 15px;
-}
-.gap-30 {
-  gap: 30px;
-}
-.gap-100 {
-  gap: 100px;
-}
+
 /* Header Part   */
 
 .header-top-strip {
@@ -439,7 +428,6 @@ font-size: 13px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
 }
 .colors li {
   width: 20px;
@@ -481,7 +469,7 @@ font-size: 13px;
 }
 .gr-12 .product-card {
   display: flex;
-  gap: 20px;
+
 }
 .gr-6 .product-image {
   width: 100%;
@@ -678,6 +666,6 @@ font-size: 13px;
 }
 .main-product-details a {
   font-size: 14px;
-  color: var(--color-777777);
+  color: var(--color-777777); 
 }
 /* Main Product Page */

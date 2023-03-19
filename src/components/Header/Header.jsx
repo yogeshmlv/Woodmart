@@ -7,29 +7,29 @@ const Header = () => {
       <header>
         <div className="header-top-strip d-none d-md-block">
           <div className="container">
-            <div class="d-flex bd-highlight mb-1 text-white ">
-              <div class="me-auto p-2 bd-highlight">
+            <div className="d-flex bd-highlight mb-1 text-white ">
+              <div className="me-auto p-2 bd-highlight">
                 FREE SHIPPING FOR ALL ORDERS OF $150
               </div>
-              <div class="p-2 bd-highlight">
-                <p className="text-end text-white mb-0 d-flex align-items-center gap-15">
-                  <i class="bi bi-facebook"></i>
+              <div className="p-2 bd-highlight">
+                <p className="text-end text-white mb-0 d-flex align-items-center gap-2">
+                  <i className="bi bi-facebook"></i>
                   <i className="bi bi-linkedin"></i>
                   <i className="bi bi-twitter"></i>
                   <i className="bi bi-telegram"></i>
                   <i className="bi bi-pinterest"></i>
                 </p>
               </div>
-              <div class="p-2 bd-highlight">NEWSLETTER</div>
-              <div class="p-2 bd-highlight">CONTACT US</div>
-              <div class="p-2 bd-highlight">FAQS</div>
+              <div className="p-2 bd-highlight">NEWSLETTER</div>
+              <div className="p-2 bd-highlight">CONTACT US</div>
+              <div className="p-2 bd-highlight">FAQS</div>
             </div>
           </div>
         </div>
-        <div class="navbar navbar-expand-lg navbar-dark header-top-strip">
-          <div class="container py-2 gap-10">
+        <div className="navbar navbar-expand-lg navbar-dark header-top-strip">
+          <div className="container py-2 gap-1">
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarTogglerDemo03"
@@ -37,14 +37,14 @@ const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
             <h2>
               <Link to="/" className="mb-0 text-white">
                 <img src="images/wood-logo-white (1).svg" />
               </Link>
             </h2>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
               <div className="input-group w-75">
                 <input
                   type="text"
@@ -57,20 +57,20 @@ const Header = () => {
                   <BsSearch className="fs-9" />
                 </span>
               </div>
-              <div className=" text-white mb-0 d-flex align-items-start gap-15">
+              <div className=" text-white mb-0 d-flex align-items-start gap-2">
                 <Link to="/login"><span className="px-4 custom">Login/Register</span>
                 </Link>
-                <Link to="/wishlist"><i class="bi bi-heart d-flex  align-items-center custom">
+                <Link to="/wishlist"><i className="bi bi-heart d-flex  align-items-center custom">
                   <span className="mb-2 item-number">0</span>
                 </i>
                 </Link>
-                <Link to="compare-product"><i class="bi bi-arrow-left-right  d-flex  align-items-center custom">
+                <Link to="compare-product"><i className="bi bi-arrow-left-right  d-flex  align-items-center custom">
                   <span className="mb-2 item-number">0</span>
                 </i>
                 </Link>
                 <Link to="/cart">
-                <i class="bi bi-handbag-fill  d-flex align-items-center custom">
-                  <span class="mb-2 item-number">0</span>
+                <i className="bi bi-handbag-fill  d-flex align-items-center custom">
+                  <span className="mb-2 item-number">0</span>
                 </i>
                 </Link>
               </div>
@@ -81,7 +81,7 @@ const Header = () => {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <div className="menu-bottom d-flex align-items-center gap-30">
+                <div className="menu-bottom d-flex align-items-center gap-3">
                   <div>
                     <div>
                       <div class="dropdown">
@@ -119,7 +119,7 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="menu-links">
-                    <div className="d-flex align-items-center gap-10">
+                    <div className="d-flex align-items-center gap-1">
                       <div class="dropdown">
                         <button
                           class="btn btn-secondary dropdown-toggle bg-transparent border-0"

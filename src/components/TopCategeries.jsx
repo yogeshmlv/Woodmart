@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-const SpecialProduct = () => {
+const TopCategeries = () => {
   var settings = {
     dots: false,
     infinite: false,
@@ -108,4 +108,4 @@ const SpecialProduct = () => {
   );
 };
 
-export default SpecialProduct;
+export default TopCategeries;

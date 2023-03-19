@@ -1,12 +1,12 @@
 import React from "react";
-import Sales from "../components/Sales";
-import BlogCard from "../components/BlogCard";
+import Sales from "../Core/TopSale";
+import BlogCard from "./BlogCard";
 import FurnitureProduct from "../components/FurnitureProduct";
 import GardenProduct from "../components/GardenProduct";
-import Marque from "../components/Marque";
-import SpecialProduct from "../components/SpecialProduct";
-import Sales2 from "../components/Sales2";
-// import MostPopular from "../components/MostPopular";
+import Marque from "../Core/Marque";
+import SpecialProduct from "../components/TopCategeries";
+import Sales2 from "../Core/SaleProduct";
+
 const Home = () => {
   return (
     <>
@@ -129,28 +129,28 @@ const Home = () => {
           <section className="py-4 name pe-200">
             <div className="">
               <div className="row">
-                <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
+                <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-3 text-black">
                   <span className="span1">1.</span>
                   <div>
                     <h6>Home Delivery.</h6>
                     <p>The European languages.</p>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
+                <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-3 text-black">
                   <span className="span1">2.</span>
                   <div>
                     <h6>Order As a Gift.</h6>
                     <p>Donec odio etiam sceles.</p>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
+                <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-3 text-black">
                   <span className="span1">3.</span>
                   <div>
                     <h6>High Quality.</h6>
                     <p>Curabitur hac hac maece.</p>
                   </div>
                 </div>
-                <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-30 text-black">
+                <div className="col-sm-6 col-lg-3 d-flex align-items-center gap-3 text-black">
                   <span className="span1">4.</span>
                   <div>
                     <h6>Buy With Joy.</h6>
@@ -184,7 +184,7 @@ const Home = () => {
                   <span>COATED ALUMINUM FRAME</span>
                   <p>Discount 30% Garden Equipment.</p>
                   <div class="slider-btn1 ">
-                    <a>READ MORE</a>
+                    <a className="text-decoration-none d-inline-block">READ MORE</a>
                   </div>
                 </div>
               </div>
@@ -203,7 +203,7 @@ const Home = () => {
                     Modern Garden Gloves.
                   </p>
                   <div class="slider-btn1 ">
-                    <a>READ MORE</a>
+                    <a className="text-decoration-none d-inline-block">READ MORE</a>
                   </div>
                 </div>
               </div>

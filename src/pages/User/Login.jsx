@@ -5,7 +5,6 @@ import Meta from "../../Core/Meta";
 import Container from "../../Core/Container";
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom'
-
 const Login = () => {
   const history = useNavigate();
   const [inpval, setInpval] = useState({

@@ -1,4 +1,5 @@
-import { useState, useEffect, useContext } from "react";
+
+import { useState, useEffect, useContext } from "react"
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { ProductContext } from "../App";
@@ -118,12 +119,12 @@ const SaleProduct = () => {
                 </div>
                 <div className="d-flex flex-row gap-3">
                   <div className="d-flex flex-column">
-                  <Link to="/cart" onClick={() => addToCart(productsItems)}>
+                    <Link to="/cart" onClick={() => addToCart(productsItems)}>
                       <img src="images/add-cart.svg" alt="addcart" />
                     </Link>
                   </div>
                   <div className="d-flex flex-column">
-                  <Link to="/cart" onClick={() => removeFromCart(productsItems.id)}>
+                    <Link to="/cart" onClick={() => removeFromCart(productsItems.id)}>
                       <img src="images/prodcompare.svg" alt="removecart" />
                     </Link>
                   </div>

@@ -67,14 +67,14 @@ const Sales = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* <button className='control'>
+                        <button className='control'>
                             <span class="carousel-control-prev-icon"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
                         <button className='control'>
                             <span class="carousel-control-next-icon"></span>
                             <span class="visually-hidden">Next</span>
-                        </button> */}
+                        </button>
                     </div>
                 </section>
             </div>

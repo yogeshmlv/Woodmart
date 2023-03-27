@@ -163,7 +163,7 @@ const Home = () => {
         </div>
         <div className="">
           <div class="row">
-          <div class="col-md-6"><Sales2 /></div>
+            <div class="col-md-6"><Sales2 /></div>
             <div class="col-md-6"><Sales /></div>
           </div>
         </div>
@@ -171,7 +171,7 @@ const Home = () => {
       <section>
         <GardenProduct />
       </section>
-      <section  class="container">
+      <section class="container">
         <div>
           <div class="row justify-content-between">
             <div class="col-sm-6">

@@ -19,15 +19,14 @@ import SingleProduct from "./pages/SingleProduct";
 import UserProfile from "./pages/User/UserProfile";
 import data from "./components/Api/data";
 
-export  const ProductContext=createContext(data)
+export  const ProductContext = createContext(data)
 
 function App() {
       const {productItems} =data;
-
   return (
     <>
      <ProductContext.Provider value={productItems} >
-      <BrowserRouter>
+      <BrowserRouter> 
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

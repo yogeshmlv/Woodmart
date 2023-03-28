@@ -10,6 +10,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "font-awesome": "^4.7.0",
+    "json-server": "^0.17.3",
     "marquee": "^0.2.1",
     "react": "^18.2.0",
     "react-bootstrap-buttons": "^1.0.0",
@@ -26,6 +27,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "react-stars": "^2.2.5",
+    "react-toastify": "^9.1.2",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },

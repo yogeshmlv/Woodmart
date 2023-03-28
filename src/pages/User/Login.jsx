@@ -1,89 +1,82 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import BreadCrumb from "../../Core/BreadCrumb";
-import Meta from "../../Core/Meta";
-import Container from "../../Core/Container";
-import { useState } from "react";
-import { useNavigate } from 'react-router-dom'
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
 const Login = () => {
-  const history = useNavigate();
-  const [inpval, setInpval] = useState({
-    email: " ",
-    password: " "
-  })
-  const getdata = (e) => {
-    const { value, name } = e.target
-    console.log(value, name);
-    setInpval(() => {
-      return {
-        ...inpval,
-        [name]: value
-      }
-    })
-  }
-  const addData = (e) => {
+  const [username, usernameupdate] = useState('');
+  const [password, passwordupdate] = useState('');
+
+  const usenavigate = useNavigate();
+
+  useEffect(() => {
+    sessionStorage.clear();
+  }, []);
+
+  const ProceedLogin = (e) => {
     e.preventDefault();
-    const getuserArr = localStorage.getItem("useryogesh");
-    console.log(getuserArr);
-    const { email, password } = inpval;
-    if (email === "") {
-      alert("Email field is Required");
-    } else if (!email.includes("@")) {
-      alert(" Enter valid email")
-    }
-    else if (password === "") {
-      alert("Password field is Required");
-    } else {
-      if (getuserArr && getuserArr.length) {
-        const userdata = JSON.parse(getuserArr);
-        const userlogin = userdata.filter((el, k) => {
-          return el.email === email && el.password === password
-        });
-        if (userlogin.length === 0) {
-          alert("Invalid User Details");
+    if (validate()) {
+      ///implentation
+      // console.log('proceed');
+      fetch("http://localhost:3000/posts" + username).then((res) => {
+        return res.json();
+      }).then((resp) => {
+        //console.log(resp)
+        if (Object.keys(resp).length === 0) {
+          toast.error('Please Enter valid username');
         } else {
-          console.log("User Login Successful");
-          history("/user-profile");
+          if (resp.password === password) {
+            toast.success('Success');
+            sessionStorage.setItem('username', username);
+            sessionStorage.setItem('userrole', resp.role);
+            usenavigate('/')
+          } else {
+            toast.error('Please Enter valid credentials');
+          }
         }
-      }
+      }).catch((err) => {
+        toast.error('Login Failed due to :' + err.message);
+      });
     }
+  }
+  const validate = () => {
+    let result = true;
+    if (username === '' || username === null) {
+      result = false;
+      toast.warning('Please Enter Username');
+    }
+    if (password === '' || password === null) {
+      result = false;
+      toast.warning('Please Enter Password');
+    }
+    return result;
   }
   return (
-    <>
-      <Meta title={"Login"} />
-      <BreadCrumb title="Login" />
-      <Container class1="login-wrapper py-5 home-wrapper-2">
-        <div className="row">
-          <div className="col-12">
-            <div className="auth-card">
-              <h3 className="text-center mb-3">Login</h3>
-              <form action="" className="d-flex flex-column gap-2">
-                <input type="email" onChange={getdata} name="email" placeholder="Email"  className="form-control w-25 " />
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  onChange={getdata}
-                  className="form-control w-25"
-                />
-                <div>
-                  <Link to="/forgot-password">Forgot Password?</Link>
-                   <div>
-                  <div className="mt-3 d-flex justify-content-center gap-2 align-items-center">
-                  <button className="button1 border-0" type="submit" onClick={addData}>
-                      Login
-                    </button>
-                    <Link to="/signup" className="button1 border-0">Sign Up</Link>
-                  </div>
-                </div>
-                </div>
-              </form>
+    <div className="row">
+      <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px' }}>
+        <form onSubmit={ProceedLogin} className="container">
+          <div className="card">
+            <div className="card-header">
+              <h2> Login</h2>
+            </div>
+            <div className="card-body">
+              <div className="form-group">
+                <label>User Name <span className="errmsg">*</span></label>
+                <input value={username} onChange={e => usernameupdate(e.target.value)} className="form-control"></input>
+              </div>
+              <div className="form-group">
+                <label>Password <span className="errmsg">*</span></label>
+                <input type="password" value={password} onChange={e => passwordupdate(e.target.value)} className="form-control"></input>
+              </div>
+            </div>
+            <div className="card-footer">
+              <button type="submit" className="btn btn-primary">Login</button> |
+              <Link className="btn btn-success" to={'/signup'}>New User</Link>
             </div>
           </div>
-        </div>
-      </Container>
-    </>
+        </form>
+      </div>
+    </div>
   );
-};
+}
 
 export default Login;
